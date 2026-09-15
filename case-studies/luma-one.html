@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luma One case study: an interactive JavaScript product experience with product configuration, quantity and cart state, responsive navigation, CSS artwork, and accessible feedback.">
+    <title>Luma One Case Study | Marsharine A. Simpson</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+</head>
+<body data-page="case-study">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <div class="nav-shell">
+            <a class="brand" href="../index.html" aria-label="Marsharine A. Simpson portfolio home"><span class="brand-mark" aria-hidden="true">MAS</span><span class="brand-copy"><strong>Marsharine A. Simpson</strong><small>Software Developer</small></span></a>
+            <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+            <nav class="main-navigation" id="main-navigation" aria-label="Primary navigation"><a href="../index.html">Home</a><a href="../projects.html" aria-current="page">Projects</a><a href="../about.html">About</a><a href="https://drive.google.com/file/d/1wuTWMn3myy1M6p0Pn2306747dkVDMAsk/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Résumé</a><a href="https://github.com/marsharine-cs" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="case-hero shell">
+            <p class="eyebrow">CASE STUDY · PRODUCT-FOCUSED FRONTEND</p>
+            <h1>Luma <span>One</span></h1>
+            <p class="case-lead">A fictional product experience that turns a polished landing page into an interactive, state-driven storefront.</p>
+            <div class="case-meta" aria-label="Technologies"><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Responsive UI</span><span>Accessibility</span></div>
+            <div class="button-row"><a class="button button-primary" href="https://luma-one-product-landing.vercel.app/" target="_blank" rel="noopener noreferrer">Open Live Application ↗</a><a class="button button-secondary" href="https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Product_Landing-_Page" target="_blank" rel="noopener noreferrer">View Source ↗</a></div>
+        </section>
+
+        <div class="case-cover shell"><img src="../assets/luma-one-project.jpg" alt="Luma One fictional storefront showing a customizable product interface"></div>
+
+        <div class="case-layout shell">
+            <aside class="case-sidebar" aria-label="Case study summary"><strong>At a glance</strong><ul><li>Interactive product configuration</li><li>Central JavaScript state</li><li>Quantity and demo cart behavior</li><li>Responsive navigation</li><li>CSS-created product artwork</li></ul></aside>
+
+            <article class="case-article">
+                <section><p class="eyebrow">THE PROBLEM</p><h2>A beautiful product page can still feel static.</h2><p>Many landing-page exercises stop at visual styling. I wanted to build a product experience that responds to choices, keeps multiple interface elements synchronized, and gives the user clear feedback throughout the interaction.</p></section>
+
+                <section><p class="eyebrow">THE SOLUTION</p><h2>A configurable fictional storefront.</h2><p>Luma One lets users choose a product finish, set a quantity from one to ten, add the configured item to a demonstration cart, navigate on mobile, and expand frequently asked questions.</p><ul><li>Product-finish selection with visible selected state.</li><li>Validated quantity controls.</li><li>Cart count and confirmation feedback.</li><li>Mobile navigation and expandable FAQ behavior.</li><li>Responsive layout across viewport sizes.</li></ul></section>
+
+                <section><p class="eyebrow">MY ROLE</p><h2>Visual system, interaction model, and implementation.</h2><p>I created the fictional product and visual direction, structured the interface, implemented the application behavior, and refined the responsive and accessible states. The product illustration is built in CSS rather than borrowed from a real brand.</p></section>
+
+                <section><p class="eyebrow">ENGINEERING HIGHLIGHTS</p><h2>Small interactions managed as one experience.</h2><h3>Central interface state</h3><p>JavaScript tracks the selected finish, quantity, and demonstration cart state. Render functions update the related controls and feedback from that shared state so the interface does not drift out of sync.</p><h3>Input boundaries and feedback</h3><p>Quantity controls enforce the supported range and communicate the result of adding a configured item. This prevents impossible states while keeping the interaction direct.</p><h3>Accessible responsiveness</h3><p>Navigation and FAQ controls expose meaningful expanded states, remain usable by keyboard, and adapt to smaller screens without removing core functionality.</p></section>
+
+                <section><p class="eyebrow">TECHNICAL DECISION</p><h2>Invent the product—and keep the work original.</h2><div class="callout"><p>I chose a fictional product and created the principal artwork with CSS. That let the project focus on interface craft, layout, and behavior without depending on an existing commercial brand or product image.</p></div><p>The constraint became part of the technical exercise: shape, lighting, finish variations, and responsive presentation all had to be controlled in code.</p></section>
+
+                <section><p class="eyebrow">IMPLEMENTATION CHALLENGE</p><h2>Keep every visible state synchronized.</h2><p>Finish controls, quantity, cart count, mobile navigation, and FAQ panels all change independently, but each must remain accurate after repeated interaction. A centralized state-and-render approach made those transitions more predictable and easier to reason about than scattered DOM updates.</p></section>
+
+                <section><p class="eyebrow">RESULT</p><h2>A frontend project with product behavior.</h2><p>The result is a deployed interactive experience that demonstrates JavaScript state management, responsive composition, original CSS illustration, input constraints, accessible controls, and user feedback—not only a static landing page.</p></section>
+
+                <section><p class="eyebrow">NEXT ITERATION</p><h2>What I would build next.</h2><ul><li>Split behavior into focused JavaScript modules.</li><li>Add automated tests for configuration and cart logic.</li><li>Persist the cart between sessions.</li><li>Add a cart panel with editable line items and totals.</li></ul></section>
+
+                <a class="next-project" href="student-progress-tracker.html"><span><small>BACK TO FIRST CASE STUDY</small><strong>Student Progress Tracker</strong></span><span aria-hidden="true">↺</span></a>
+            </article>
+        </div>
+    </main>
+    <footer class="site-footer"><div class="shell footer-grid"><div><strong>Marsharine A. Simpson</strong><span>Software Developer</span></div><p>© <span data-current-year>2026</span> Marsharine A. Simpson</p></div></footer>
+</body>
+</html>

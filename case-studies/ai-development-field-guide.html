@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Development Field Guide case study: searchable technical documentation, JavaScript interaction design, accessibility, local state, responsive navigation, and progressive learning.">
+    <title>AI Development Field Guide Case Study | Marsharine A. Simpson</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+</head>
+<body data-page="case-study">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <div class="nav-shell">
+            <a class="brand" href="../index.html" aria-label="Marsharine A. Simpson portfolio home"><span class="brand-mark" aria-hidden="true">MAS</span><span class="brand-copy"><strong>Marsharine A. Simpson</strong><small>Software Developer</small></span></a>
+            <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+            <nav class="main-navigation" id="main-navigation" aria-label="Primary navigation"><a href="../index.html">Home</a><a href="../projects.html" aria-current="page">Projects</a><a href="../about.html">About</a><a href="https://drive.google.com/file/d/1wuTWMn3myy1M6p0Pn2306747dkVDMAsk/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Résumé</a><a href="https://github.com/marsharine-cs" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="case-hero shell">
+            <p class="eyebrow">CASE STUDY · INTERACTIVE DOCUMENTATION</p>
+            <h1>AI Development <span>Field Guide</span></h1>
+            <p class="case-lead">A searchable and accessible technical reference that supports both guided learning and quick, nonlinear concept lookup.</p>
+            <div class="case-meta" aria-label="Technologies"><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Local Storage</span><span>Accessibility</span></div>
+            <div class="button-row"><a class="button button-primary" href="https://ai-development-field-guide.vercel.app/" target="_blank" rel="noopener noreferrer">Open Live Application ↗</a><a class="button button-secondary" href="https://github.com/marsharine-cs/Software_Engineering-Projects/tree/AI_Dev-Technical_Doc_Web_Project" target="_blank" rel="noopener noreferrer">View Source ↗</a></div>
+        </section>
+
+        <div class="case-cover shell"><img src="../assets/ai-field-guide-project.png" alt="AI Development Field Guide interface showing technical learning content and navigation"></div>
+
+        <div class="case-layout shell">
+            <aside class="case-sidebar" aria-label="Case study summary"><strong>At a glance</strong><ul><li>Interactive technical reference</li><li>Search and keyboard shortcuts</li><li>Progress and theme persistence</li><li>Responsive navigation</li><li>Accessibility-focused behavior</li></ul></aside>
+
+            <article class="case-article">
+                <section><p class="eyebrow">THE PROBLEM</p><h2>Dense technical content is difficult to enter and difficult to revisit.</h2><p>AI concepts are often presented either as long, linear documentation or as disconnected definitions. New learners need a clear path through the material, while returning users need a fast way to find one specific idea.</p></section>
+
+                <section><p class="eyebrow">THE SOLUTION</p><h2>One interface for learning and reference.</h2><p>I designed the Field Guide to support two valid modes: follow a guided sequence from foundations through evaluation and responsible use, or search and jump directly to the needed concept.</p><ul><li>Search across titles, keywords, and visible content.</li><li>Active navigation that reflects the reader’s location.</li><li>Expandable sections for layered explanations.</li><li>Copy controls for useful examples.</li><li>Glossary, reading progress, and persistent theme preference.</li><li>Responsive navigation for smaller screens.</li></ul></section>
+
+                <section><p class="eyebrow">MY ROLE</p><h2>Content architecture, interface design, and implementation.</h2><p>I planned the information hierarchy, wrote and organized the technical content, designed the responsive interface, and implemented the application behavior in JavaScript. The project brings educational judgment and frontend engineering into the same product.</p></section>
+
+                <section><p class="eyebrow">ENGINEERING HIGHLIGHTS</p><h2>Interaction patterns that make documentation usable.</h2><h3>Search behavior</h3><p>The search experience indexes multiple content signals rather than matching headings alone. A forward-slash keyboard shortcut moves focus into search, while Escape provides a predictable exit behavior.</p><h3>Persistent state</h3><p>Local storage preserves reading progress and theme preference so the interface respects the user’s choices across visits without requiring an account.</p><h3>Responsive and accessible controls</h3><p>The navigation adapts for smaller screens, controls have keyboard behavior and meaningful labels, and reduced-motion preferences are respected.</p></section>
+
+                <section><p class="eyebrow">TECHNICAL DECISION</p><h2>Support guided and nonlinear use.</h2><div class="callout"><p>I did not force every user through the content in the same order. The architecture combines a clear learning sequence with search, section navigation, glossary access, and visible progress.</p></div><p>That decision makes the same application useful to a beginner learning a concept for the first time and to a developer returning for a precise reminder.</p></section>
+
+                <section><p class="eyebrow">DESIGN CHALLENGE</p><h2>Keep a long reference from feeling like one long page.</h2><p>The primary challenge was managing density without hiding useful detail. I used content grouping, progressive disclosure, active navigation, search, consistent visual hierarchy, and responsive controls to make a large body of content feel navigable.</p></section>
+
+                <section><p class="eyebrow">RESULT</p><h2>Technical documentation that behaves like a product.</h2><p>The result is more than a static article. It is a deployed learning and reference application with search, persistent preferences, keyboard interaction, responsive navigation, and accessibility-conscious behavior.</p></section>
+
+                <section><p class="eyebrow">NEXT ITERATION</p><h2>What I would build next.</h2><ul><li>Modularize the JavaScript into smaller application modules.</li><li>Add automated tests for search, navigation, and persistence.</li><li>Support saved highlights and personal notes.</li><li>Move repeated interface patterns into a component architecture.</li></ul></section>
+
+                <a class="next-project" href="luma-one.html"><span><small>NEXT CASE STUDY</small><strong>Luma One</strong></span><span aria-hidden="true">→</span></a>
+            </article>
+        </div>
+    </main>
+    <footer class="site-footer"><div class="shell footer-grid"><div><strong>Marsharine A. Simpson</strong><span>Software Developer</span></div><p>© <span data-current-year>2026</span> Marsharine A. Simpson</p></div></footer>
+</body>
+</html>

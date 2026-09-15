@@ -3,1099 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-        name="description"
-        content="Professional portfolio of Marsharine A. Simpson, S.T.E.M. Educator and Technology Professional specializing in web development, educational technology, IT, cybersecurity, and technical problem-solving."
-    >
-    <title>Marsharine A. Simpson | S.T.E.M. Educator &amp; Technology Professional</title>
+    <meta name="description" content="Software-development portfolio of Marsharine A. Simpson featuring React, TypeScript, JavaScript, Supabase, PostgreSQL, testing, accessibility, and deployed web applications.">
+    <title>Marsharine A. Simpson | Software Developer</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
-
-<body>
+<body data-page="home">
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <!-- =====================================================
-         HEADER
-    ====================================================== -->
     <header class="site-header">
         <div class="nav-shell">
-            <a class="brand" href="#top" aria-label="Marsharine A. Simpson portfolio home">
-                <span class="brand-mark">MAS</span>
+            <a class="brand" href="index.html" aria-label="Marsharine A. Simpson portfolio home">
+                <span class="brand-mark" aria-hidden="true">MAS</span>
                 <span class="brand-copy">
                     <strong>Marsharine A. Simpson</strong>
-                    <small>S.T.E.M. Educator &amp; Technology Professional</small>
+                    <small>Software Developer</small>
                 </span>
             </a>
 
-            <button
-                class="menu-button"
-                id="menu-button"
-                type="button"
-                aria-expanded="false"
-                aria-controls="main-navigation"
-                aria-label="Open navigation menu"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation menu">
+                <span></span><span></span><span></span>
             </button>
 
             <nav class="main-navigation" id="main-navigation" aria-label="Primary navigation">
-                <a href="#work">Work</a>
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-                <a href="#questions">Q&amp;A</a>
-                <a href="#credentials">Credentials</a>
-                <a href="#contact">Contact</a>
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="https://drive.google.com/file/d/1wuTWMn3myy1M6p0Pn2306747dkVDMAsk/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Résumé</a>
+                <a href="https://github.com/marsharine-cs" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
             </nav>
-
-            <a
-                class="github-link"
-                href="https://github.com/marsharine-cs"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                GitHub
-                <span aria-hidden="true">↗</span>
-            </a>
         </div>
     </header>
 
     <main id="main-content">
-        <!-- =====================================================
-             HERO
-        ====================================================== -->
-        <section class="hero" id="top" aria-labelledby="hero-heading">
+        <section class="hero shell" aria-labelledby="hero-heading">
             <div class="hero-copy">
-                <p class="eyebrow">S.T.E.M. EDUCATION · TECHNOLOGY · DEVELOPMENT</p>
-
-                <h1 id="hero-heading">
-                    Marsharine A.
-                    <span>Simpson</span>
-                </h1>
-
-                <p class="hero-role">
-                    S.T.E.M. Educator
-                    <span aria-hidden="true">+</span>
-                    Technology Professional
-                </p>
-
-                <h2 class="hero-statement">
-                    I build technology.
-                    I teach it.
-                    I troubleshoot it.
-                </h2>
-
-                <p class="hero-introduction">
-                    I combine software development, educational technology,
-                    IT, cybersecurity, and technical communication to solve
-                    problems, empower learners, and create practical digital
-                    experiences.
-                </p>
-
-                <div class="hero-actions">
-                    <a class="primary-button" href="#work">
-                        View Selected Work
-                        <span aria-hidden="true">→</span>
-                    </a>
-
-                    <a
-                        class="secondary-button"
-                        href="assets/Marsharine-Simpson-Computer-Science-Educator-Resume-Final.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View Résumé
-                        <span aria-hidden="true">↗</span>
-                    </a>
+                <p class="eyebrow">SOFTWARE DEVELOPER</p>
+                <h1 id="hero-heading">Marsharine A. <span>Simpson</span></h1>
+                <p class="hero-stack">React · TypeScript · JavaScript · Full-Stack Web Applications</p>
+                <p class="hero-introduction">I build practical, user-focused web applications and bring a background in technology, education, and technical problem-solving to the way I design, test, troubleshoot, and communicate software.</p>
+                <p class="signature-line">I build technology. I teach it. I make it easier to use.</p>
+                <div class="button-row">
+                    <a class="button button-primary" href="#featured-projects">View Projects <span aria-hidden="true">↓</span></a>
+                    <a class="button button-secondary" href="https://github.com/marsharine-cs" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
 
-            <div class="hero-photo">
-                <img
-                    src="assets/marsharine-profile.jpg"
-                    alt="Professional portrait of Marsharine A. Simpson seated at a desk"
-                >
-                <div class="photo-accent" aria-hidden="true"></div>
+            <figure class="hero-photo">
+                <img src="assets/Profile_pic_3.png" alt="Professional portrait of Marsharine A. Simpson at a desk with a notebook and laptop">
+                <figcaption>Technology · problem-solving · clear communication</figcaption>
+            </figure>
+        </section>
+
+        <section class="proof-strip" aria-label="Core development capabilities">
+            <div class="shell proof-grid">
+                <div><strong>React + TypeScript</strong><span>Component-based interfaces</span></div>
+                <div><strong>Full-Stack</strong><span>Authentication and relational data</span></div>
+                <div><strong>Testing</strong><span>Vitest and Testing Library</span></div>
+                <div><strong>Accessible UI</strong><span>Keyboard and responsive behavior</span></div>
             </div>
         </section>
 
-        <!-- =====================================================
-             BUILD / TEACH / TROUBLESHOOT
-        ====================================================== -->
-        <section class="strength-strip" aria-label="Core professional strengths">
-            <article>
-                <span class="strength-number">01</span>
-                <div class="strength-icon" aria-hidden="true">&lt;/&gt;</div>
-                <div>
-                    <h2>Build</h2>
-                    <p>
-                        Responsive interfaces and interactive JavaScript
-                        experiences that are practical, usable, and accessible.
-                    </p>
-                </div>
-            </article>
-
-            <article>
-                <span class="strength-number">02</span>
-                <div class="strength-icon" aria-hidden="true">◇</div>
-                <div>
-                    <h2>Teach</h2>
-                    <p>
-                        Explain technical concepts through structured,
-                        learner-centered experiences that make complex ideas
-                        easier to understand.
-                    </p>
-                </div>
-            </article>
-
-            <article>
-                <span class="strength-number">03</span>
-                <div class="strength-icon" aria-hidden="true">⌁</div>
-                <div>
-                    <h2>Troubleshoot</h2>
-                    <p>
-                        Approach technology problems systematically, isolate
-                        the issue, test solutions, and move from problem to
-                        working result.
-                    </p>
-                </div>
-            </article>
-        </section>
-
-        <!-- =====================================================
-             SELECTED WORK
-        ====================================================== -->
-        <section class="work-section" id="work" aria-labelledby="work-heading">
+        <section class="section shell" id="featured-projects" aria-labelledby="featured-heading">
             <div class="section-heading">
                 <div>
-                    <p class="eyebrow">SELECTED WORK</p>
-                    <h2 id="work-heading">
-                        Projects built to
-                        <span>solve, teach, and interact.</span>
-                    </h2>
+                    <p class="eyebrow">FEATURED ENGINEERING PROJECTS</p>
+                    <h2 id="featured-heading">Work that shows <span>how I build.</span></h2>
                 </div>
-
-                <p>
-                    Selected curriculum, full-stack, JavaScript, and educational
-                    technology work—built, tested, documented, and published or
-                    deployed as appropriate.
-                </p>
+                <p>Three focused projects demonstrating full-stack development, interactive JavaScript, product thinking, testing, accessibility, and production deployment.</p>
             </div>
 
-            <!-- PROJECT 01 — PYTHON & COMPUTER SCIENCE CURRICULUM -->
-            <article class="featured-project">
-                <a
-                    class="featured-project-image"
-                    href="https://github.com/marsharine-cs/computer-science-secondary-curriculum/blob/main/intro-to-python-9-12/sample-lesson-1.3.md"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Open the public Introduction to Python curriculum sample"
-                >
-                    <img
-                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjgzMCIgdmlld0JveD0iMCAwIDE2MDAgODMwIj4KPGRlZnM+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeDI9IjEiIHkxPSIwIiB5Mj0iMSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMyNDE1MmYiLz4KICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzZmMjM0ZSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjE2MDAiIGhlaWdodD0iODMwIiBmaWxsPSJ1cmwoI2cpIi8+CjxjaXJjbGUgY3g9IjEzODAiIGN5PSIxMjAiIHI9IjI1MCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjA2Ii8+CjxjaXJjbGUgY3g9IjE0NTAiIGN5PSI2OTAiIHI9IjMzMCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjA0Ii8+Cjx0ZXh0IHg9IjExMCIgeT0iMTM1IiBmaWxsPSIjZThjOTZhIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCIgbGV0dGVyLXNwYWNpbmc9IjQiPkNVUlJJQ1VMVU0gREVWRUxPUE1FTlQgwrcgUFlUSE9OIMK3IEVEVEVDSDwvdGV4dD4KPHRleHQgeD0iMTEwIiB5PSIyNTAiIGZpbGw9IiNmZmZmZmYiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSI4MiIgZm9udC13ZWlnaHQ9IjcwMCI+SW50cm9kdWN0aW9uIHRvIFB5dGhvbjwvdGV4dD4KPHRleHQgeD0iMTEwIiB5PSIzMzIiIGZpbGw9IiNmZmZmZmYiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zaXplPSI1NCI+R3JhZGVzIDnigJMxMjwvdGV4dD4KPHRleHQgeD0iMTEwIiB5PSI0MTUiIGZpbGw9IiNmNGU3ZWYiIGZvbnQtZmFtaWx5PSJBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjMxIj5BIHNlbWVzdGVyLWxlbmd0aCBjb3Vyc2UgYnVpbHQgZm9yIHN0dWRlbnRzIHdpdGggbm8gcHJpb3IgY29kaW5nIGV4cGVyaWVuY2UuPC90ZXh0Pgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMTAsNTEwKSI+CiAgPHJlY3Qgd2lkdGg9IjI3MCIgaGVpZ2h0PSIxNDUiIHJ4PSIyNCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjEwIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1vcGFjaXR5PSIuMjAiLz4KICA8dGV4dCB4PSIzMCIgeT0iNTYiIGZpbGw9IiNlOGM5NmEiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI0NiIgZm9udC13ZWlnaHQ9IjcwMCI+MzY8L3RleHQ+CiAgPHRleHQgeD0iMzAiIHk9IjEwMiIgZmlsbD0iI2ZmZmZmZiIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0Ij5MZXNzb25zPC90ZXh0Pgo8L2c+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQxMCw1MTApIj4KICA8cmVjdCB3aWR0aD0iMjcwIiBoZWlnaHQ9IjE0NSIgcng9IjI0IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuMTAiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4yMCIvPgogIDx0ZXh0IHg9IjMwIiB5PSI1NiIgZmlsbD0iI2U4Yzk2YSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjQ2IiBmb250LXdlaWdodD0iNzAwIj43PC90ZXh0PgogIDx0ZXh0IHg9IjMwIiB5PSIxMDIiIGZpbGw9IiNmZmZmZmYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCI+VW5pdHM8L3RleHQ+CjwvZz4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzEwLDUxMCkiPgogIDxyZWN0IHdpZHRoPSIyNzAiIGhlaWdodD0iMTQ1IiByeD0iMjQiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4xMCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utb3BhY2l0eT0iLjIwIi8+CiAgPHRleHQgeD0iMzAiIHk9IjU2IiBmaWxsPSIjZThjOTZhIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNDYiIGZvbnQtd2VpZ2h0PSI3MDAiPjE2PC90ZXh0PgogIDx0ZXh0IHg9IjMwIiB5PSIxMDIiIGZpbGw9IiNmZmZmZmYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCI+V2Vla3M8L3RleHQ+CjwvZz4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAxMCw1MTApIj4KICA8cmVjdCB3aWR0aD0iNDcwIiBoZWlnaHQ9IjE0NSIgcng9IjI0IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuMTAiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4yMCIvPgogIDx0ZXh0IHg9IjMwIiB5PSI1MiIgZmlsbD0iI2U4Yzk2YSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI5IiBmb250LXdlaWdodD0iNzAwIj5QeXRob24gMy4xMjwvdGV4dD4KICA8dGV4dCB4PSIzMCIgeT0iOTIiIGZpbGw9IiNmZmZmZmYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMiI+RXhlY3V0aW9uLWJhc2VkIFFBPC90ZXh0PgogIDx0ZXh0IHg9IjMwIiB5PSIxMjQiIGZpbGw9IiNmZmZmZmYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOSI+U2VsZWN0ZWQgcHVibGljIHNhbXBsZXMgb25seTwvdGV4dD4KPC9nPgo8dGV4dCB4PSIxMTAiIHk9Ijc0MiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjg4IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiPlVuaXQgMTogUXVhbGl0eSBBc3N1cmFuY2UgIMK3ICBVbml0IDI6IEluIERldmVsb3BtZW50PC90ZXh0Pgo8L3N2Zz4="
-                        alt="Introduction to Python grades 9 through 12 curriculum portfolio overview"
-                    >
-                    <span class="project-number">01</span>
-                </a>
-
-                <div class="featured-project-content">
-                    <p class="project-category">CURRICULUM DEVELOPMENT · PYTHON · EDTECH</p>
-                    <h3>Python &amp; Computer Science Curriculum Development</h3>
-                    <p class="project-subtitle">Introduction to Python · Grades 9–12</p>
-                    <p>
-                        A semester-length, 36-lesson, seven-unit course in active
-                        development for students entering with no prior coding
-                        experience. Public portfolio materials demonstrate lesson
-                        architecture, debugging pedagogy, assessment design,
-                        teacher support, standards-referenced planning, and
-                        execution-based Python QA while complete curriculum
-                        materials remain protected.
-                    </p>
-
-                    <ul class="technology-tags">
-                        <li>Python</li>
-                        <li>Curriculum Design</li>
-                        <li>Instructional Design</li>
-                        <li>Assessment</li>
-                        <li>Quality Assurance</li>
-                    </ul>
-
-                    <div class="project-links">
-                        <a
-                            href="https://github.com/marsharine-cs/computer-science-secondary-curriculum/blob/main/intro-to-python-9-12/sample-lesson-1.3.md"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            View Public Sample
-                            <span aria-hidden="true">↗</span>
-                        </a>
-
-                        <a
-                            href="https://github.com/marsharine-cs/computer-science-secondary-curriculum"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Curriculum Repository
-                            <span aria-hidden="true">↗</span>
-                        </a>
+            <div class="featured-grid">
+                <article class="project-card project-card-featured">
+                    <div class="project-media tracker-preview" role="img" aria-label="Stylized preview of the Student Progress Tracker dashboard">
+                        <div class="mock-browser">
+                            <div class="mock-browser-bar"><i></i><i></i><i></i><span>Student Progress Tracker</span></div>
+                            <div class="mock-dashboard">
+                                <div class="mock-sidebar"><b>SPT</b><span></span><span></span><span></span></div>
+                                <div class="mock-content">
+                                    <div class="mock-heading"></div>
+                                    <div class="mock-stats"><i></i><i></i><i></i></div>
+                                    <div class="mock-table"><span></span><span></span><span></span><span></span></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </article>
-
-            <div class="project-grid">
-
-                <!-- PROJECT 02 — STUDENT PROGRESS TRACKER -->
-                <article class="project-card">
-                    <a
-                        class="project-image"
-                        href="https://student-progress-tracker-sepia.vercel.app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Open Student Progress Tracker live demo"
-                    >
-                        <img
-                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjkwMCIgdmlld0JveD0iMCAwIDE2MDAgOTAwIj4KPGRlZnM+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJnMiIgeDE9IjAiIHgyPSIxIj4KICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2Y2ZjBlYSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZWFkZGU2Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9InVybCgjZzIpIi8+CjxyZWN0IHg9IjEwMCIgeT0iODUiIHdpZHRoPSIxNDAwIiBoZWlnaHQ9IjczMCIgcng9IjM0IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiNkN2M4ZDEiIHN0cm9rZS13aWR0aD0iNCIvPgo8cmVjdCB4PSIxMDAiIHk9Ijg1IiB3aWR0aD0iMzMwIiBoZWlnaHQ9IjczMCIgcng9IjM0IiBmaWxsPSIjMmIxYTMyIi8+Cjx0ZXh0IHg9IjE2MCIgeT0iMTcwIiBmaWxsPSIjZThjOTZhIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMzAiIGZvbnQtd2VpZ2h0PSI3MDAiPlNUVURFTlQ8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMjE0IiBmaWxsPSIjZmZmZmZmIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMzAiIGZvbnQtd2VpZ2h0PSI3MDAiPlBST0dSRVNTIFRSQUNLRVI8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMjg2IiBmaWxsPSIjZDljYmQ0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjIiPlN0dWRlbnRzPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjMzNiIgZmlsbD0iI2Q5Y2JkNCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIyIj5Ta2lsbHM8L3RleHQ+Cjx0ZXh0IHg9IjE2MCIgeT0iMzg2IiBmaWxsPSIjZDljYmQ0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjIiPkFzc2Vzc21lbnRzPC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjQzNiIgZmlsbD0iI2U4Yzk2YSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIyIj5EYXNoYm9hcmQg4oCUIE5leHQ8L3RleHQ+Cjx0ZXh0IHg9IjUwMCIgeT0iMTcwIiBmaWxsPSIjMmIxYTMyIiBmb250LWZhbWlseT0iR2VvcmdpYSIgZm9udC1zaXplPSI1MCIgZm9udC13ZWlnaHQ9IjcwMCI+U2tpbGwgTWFzdGVyeSBBcHAgZm9yIFRlYWNoZXJzPC90ZXh0Pgo8dGV4dCB4PSI1MDAiIHk9IjIyMiIgZmlsbD0iIzZhNWE2NCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0Ij5SZWFjdCDCtyBUeXBlU2NyaXB0IMK3IFN1cGFiYXNlIMK3IEVkVGVjaDwvdGV4dD4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTAwLDI5MCkiPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjE3MCIgcng9IjIyIiBmaWxsPSIjZjVlZWYzIi8+Cjx0ZXh0IHg9IjI4IiB5PSI1MiIgZmlsbD0iIzZmMjM0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iNzAwIj5TVFVERU5UUzwvdGV4dD4KPHRleHQgeD0iMjgiIHk9IjExNiIgZmlsbD0iIzJiMWEzMiIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjU2IiBmb250LXdlaWdodD0iNzAwIj4yNDwvdGV4dD4KPC9nPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4MTUsMjkwKSI+CjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMTcwIiByeD0iMjIiIGZpbGw9IiNmNWVlZjMiLz4KPHRleHQgeD0iMjgiIHk9IjUyIiBmaWxsPSIjNmYyMzRlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjIiIGZvbnQtd2VpZ2h0PSI3MDAiPlNLSUxMUzwvdGV4dD4KPHRleHQgeD0iMjgiIHk9IjExNiIgZmlsbD0iIzJiMWEzMiIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjU2IiBmb250LXdlaWdodD0iNzAwIj4xMjwvdGV4dD4KPC9nPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMTMwLDI5MCkiPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjE3MCIgcng9IjIyIiBmaWxsPSIjZjVlZWYzIi8+Cjx0ZXh0IHg9IjI4IiB5PSI1MiIgZmlsbD0iIzZmMjM0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iNzAwIj5BU1NFU1NNRU5UUzwvdGV4dD4KPHRleHQgeD0iMjgiIHk9IjExNiIgZmlsbD0iIzJiMWEzMiIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjU2IiBmb250LXdlaWdodD0iNzAwIj40ODwvdGV4dD4KPC9nPgo8cmVjdCB4PSI1MDAiIHk9IjUxMCIgd2lkdGg9IjkxMCIgaGVpZ2h0PSIyMjAiIHJ4PSIyNCIgZmlsbD0iI2ZhZjdmOSIgc3Ryb2tlPSIjZTRkOGRmIi8+Cjx0ZXh0IHg9IjUzNSIgeT0iNTYzIiBmaWxsPSIjMmIxYTMyIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSI3MDAiPkN1cnJlbnQgYnVpbGQ8L3RleHQ+Cjx0ZXh0IHg9IjUzNSIgeT0iNjEwIiBmaWxsPSIjNmE1YTY0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjIiPkF1dGhlbnRpY2F0aW9uIMK3IFByb3RlY3RlZCBhY2Nlc3MgwrcgU3R1ZGVudCByZWNvcmRzPC90ZXh0Pgo8dGV4dCB4PSI1MzUiIHk9IjY1MiIgZmlsbD0iIzZhNWE2NCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIyIj5Ta2lsbCByZWNvcmRzIMK3IEFzc2Vzc21lbnQgZW50cnkgwrcgQXNzZXNzbWVudCBoaXN0b3J5PC90ZXh0Pgo8dGV4dCB4PSI1MzUiIHk9IjY5NCIgZmlsbD0iIzZmMjM0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iNzAwIj5JbiBEZXZlbG9wbWVudDwvdGV4dD4KPC9zdmc+"
-                            alt="Student Progress Tracker skill mastery application overview"
-                        >
-                        <span class="project-number">02</span>
-                    </a>
-
-                    <div class="project-card-content">
-                        <p class="project-category">EDTECH · FULL-STACK · IN DEVELOPMENT</p>
+                    <div class="project-card-body">
+                        <p class="project-kicker">01 · FULL-STACK APPLICATION</p>
                         <h3>Student Progress Tracker</h3>
-                        <p>
-                            A React, TypeScript, and Supabase application for
-                            securely managing student, skill, and assessment
-                            records. Authentication, protected access, record
-                            management, assessment entry, and assessment history
-                            are implemented; the mastery dashboard is the next
-                            major feature.
-                        </p>
-
-                        <ul class="technology-tags">
-                            <li>React</li>
-                            <li>TypeScript</li>
-                            <li>Supabase</li>
-                            <li>EdTech</li>
-                            <li>Authentication</li>
+                        <p>A secure application for managing students, skills, assessment history, and current mastery through one teacher dashboard.</p>
+                        <ul class="tag-list" aria-label="Technologies">
+                            <li>React</li><li>TypeScript</li><li>Supabase</li><li>Vitest</li>
                         </ul>
-
-                        <div class="project-links">
-                            <a
-                                href="https://student-progress-tracker-sepia.vercel.app"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Live Demo ↗
-                            </a>
-
-                            <a
-                                href="https://github.com/marsharine-cs/student-progress-tracker"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Source ↗
-                            </a>
+                        <div class="project-actions">
+                            <a class="button button-primary button-small" href="case-studies/student-progress-tracker.html">View Case Study</a>
+                            <a href="https://student-progress-tracker-sepia.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+                            <a href="https://github.com/marsharine-cs/student-progress-tracker" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- PROJECT 03 — AI DEVELOPMENT FIELD GUIDE -->
-                <article class="project-card">
-                    <a
-                        class="project-image"
-                        href="https://ai-development-field-guide.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Open AI Development Field Guide live demo"
-                    >
-                        <img
-                            src="assets/ai-field-guide-project.png"
-                            alt="AI Development Field Guide interactive learning application"
-                        >
-                        <span class="project-number">03</span>
+                <article class="project-card project-card-featured">
+                    <a class="project-media" href="case-studies/ai-development-field-guide.html" aria-label="Read the AI Development Field Guide case study">
+                        <img src="assets/ai-field-guide-project.png" alt="AI Development Field Guide interface preview">
                     </a>
-
-                    <div class="project-card-content">
-                        <p class="project-category">EDTECH · AI LITERACY · INTERACTIVE DOCUMENTATION</p>
+                    <div class="project-card-body">
+                        <p class="project-kicker">02 · INTERACTIVE DOCUMENTATION</p>
                         <h3>AI Development Field Guide</h3>
-                        <p>
-                            An interactive learning and reference application
-                            that turns technical AI documentation into a guided
-                            educational experience with structured learning
-                            paths, searchable content, concept explorers,
-                            copyable examples, a glossary, reading progress,
-                            theme persistence, and responsive navigation.
-                        </p>
-
-                        <ul class="technology-tags">
-                            <li>JavaScript</li>
-                            <li>EdTech</li>
-                            <li>AI Literacy</li>
-                            <li>Accessibility</li>
-                            <li>Technical Writing</li>
+                        <p>A searchable and accessible technical reference covering AI fundamentals, generative AI, evaluation, and responsible use.</p>
+                        <ul class="tag-list" aria-label="Technologies">
+                            <li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>Accessibility</li>
                         </ul>
-
-                        <div class="project-links">
-                            <a
-                                href="https://ai-development-field-guide.vercel.app/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Live Demo ↗
-                            </a>
-
-                            <a
-                                href="https://github.com/marsharine-cs/Software_Engineering-Projects/tree/AI_Dev-Technical_Doc_Web_Project"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Source ↗
-                            </a>
+                        <div class="project-actions">
+                            <a class="button button-primary button-small" href="case-studies/ai-development-field-guide.html">View Case Study</a>
+                            <a href="https://ai-development-field-guide.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+                            <a href="https://github.com/marsharine-cs/Software_Engineering-Projects/tree/AI_Dev-Technical_Doc_Web_Project" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- PROJECT 04 — JAVASCRIPT QUIZ -->
-                <article class="project-card">
-                    <a
-                        class="project-image"
-                        href="https://javascript-knowledge-quiz.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Open JavaScript Knowledge Quiz live demo"
-                    >
-                        <img
-                            src="assets/javascript-quiz-project.png"
-                            alt="JavaScript Knowledge Quiz application"
-                        >
-                        <span class="project-number">04</span>
+                <article class="project-card project-card-featured">
+                    <a class="project-media" href="case-studies/luma-one.html" aria-label="Read the Luma One case study">
+                        <img src="assets/luma-one-project.jpg" alt="Luma One interactive product experience preview">
                     </a>
-
-                    <div class="project-card-content">
-                        <p class="project-category">EDUCATIONAL TECHNOLOGY · JAVASCRIPT</p>
-                        <h3>JavaScript Knowledge Quiz</h3>
-                        <p>
-                            A ten-question instructional application with
-                            progress tracking, immediate feedback, explanations,
-                            final scoring, answer review, keyboard support, and
-                            retake functionality.
-                        </p>
-
-                        <ul class="technology-tags">
-                            <li>JavaScript</li>
-                            <li>EdTech</li>
-                            <li>Assessment</li>
-                            <li>Accessibility</li>
-                        </ul>
-
-                        <div class="project-links">
-                            <a
-                                href="https://javascript-knowledge-quiz.vercel.app/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Live Demo ↗
-                            </a>
-
-                            <a
-                                href="https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Quiz"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Source ↗
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- PROJECT 05 — ADA LOVELACE -->
-                <article class="project-card">
-                    <a
-                        class="project-image"
-                        href="https://ada-lovelace-poetry-of-computation.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Open Ada Lovelace Poetry of Computation live demo"
-                    >
-                        <img
-                            src="assets/ada-lovelace-project.png"
-                            alt="Ada Lovelace The Poetry of Computation interactive digital history project"
-                        >
-                        <span class="project-number">05</span>
-                    </a>
-
-                    <div class="project-card-content">
-                        <p class="project-category">EDTECH · DIGITAL HISTORY · WEB DEVELOPMENT</p>
-                        <h3>Ada Lovelace — The Poetry of Computation</h3>
-                        <p>
-                            An interactive digital history experience that
-                            explores Ada Lovelace's work through a structured
-                            timeline, explanatory content, interactive notes,
-                            responsive design, keyboard support, and accessible
-                            educational storytelling.
-                        </p>
-
-                        <ul class="technology-tags">
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>EdTech</li>
-                            <li>Accessibility</li>
-                        </ul>
-
-                        <div class="project-links">
-                            <a
-                                href="https://ada-lovelace-poetry-of-computation.vercel.app/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Live Demo ↗
-                            </a>
-
-                            <a
-                                href="https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Lovelace_Tribute_Web_Project"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Source ↗
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- PROJECT 06 — LUMA ONE -->
-                <article class="project-card">
-                    <a
-                        class="project-image"
-                        href="https://luma-one-product-landing.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Open Luma One live demo"
-                    >
-                        <img
-                            src="assets/luma-one-project.jpg"
-                            alt="Luma One interactive product landing page"
-                        >
-                        <span class="project-number">06</span>
-                    </a>
-
-                    <div class="project-card-content">
-                        <p class="project-category">FRONT-END · JAVASCRIPT · E-COMMERCE UI</p>
+                    <div class="project-card-body">
+                        <p class="project-kicker">03 · PRODUCT-FOCUSED FRONTEND</p>
                         <h3>Luma One</h3>
-                        <p>
-                            A fictional e-commerce experience featuring product
-                            finish customization, quantity controls, client-side
-                            cart state, responsive navigation, FAQ interactions,
-                            and an original product presentation.
-                        </p>
-
-                        <ul class="technology-tags">
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>Responsive UI</li>
+                        <p>An interactive fictional storefront with product customization, quantity controls, cart state, responsive navigation, and accessible feedback.</p>
+                        <ul class="tag-list" aria-label="Technologies">
+                            <li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>Responsive UI</li>
                         </ul>
-
-                        <div class="project-links">
-                            <a
-                                href="https://luma-one-product-landing.vercel.app/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Live Demo ↗
-                            </a>
-
-                            <a
-                                href="https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Product_Landing-_Page"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Source ↗
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- PROJECT 07 — BALANCE SHEET -->
-                <article class="project-card">
-                    <a
-                        class="project-image"
-                        href="https://interactive-balance-sheet.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Open Interactive Balance Sheet live demo"
-                    >
-                        <img
-                            src="assets/balance-sheet-project.png"
-                            alt="Interactive Balance Sheet application"
-                        >
-                        <span class="project-number">07</span>
-                    </a>
-
-                    <div class="project-card-content">
-                        <p class="project-category">JAVASCRIPT · FINANCIAL DASHBOARD</p>
-                        <h3>Interactive Balance Sheet</h3>
-                        <p>
-                            An editable financial dashboard with year-based
-                            state, automatic assets and liabilities calculations,
-                            net-worth analysis, debt-to-assets reporting, reset
-                            functionality, and print support.
-                        </p>
-
-                        <ul class="technology-tags">
-                            <li>JavaScript</li>
-                            <li>DOM</li>
-                            <li>State</li>
-                            <li>Financial Logic</li>
-                        </ul>
-
-                        <div class="project-links">
-                            <a
-                                href="https://interactive-balance-sheet.vercel.app/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Live Demo ↗
-                            </a>
-
-                            <a
-                                href="https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Balance_Sheet_Project"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Source ↗
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- PROJECT 08 — PALINDROME CHECKER -->
-                <article class="project-card compact-project">
-                    <a
-                        class="project-image"
-                        href="https://palindrome-checker-8xvfm2c62-marsharine-simpsons-projects.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Open Palindrome Checker live demo"
-                    >
-                        <img
-                            src="assets/palindrome-project.png"
-                            alt="Palindrome Checker application"
-                        >
-                        <span class="project-number">08</span>
-                    </a>
-
-                    <div class="project-card-content">
-                        <p class="project-category">JAVASCRIPT · TEXT PROCESSING</p>
-                        <h3>Palindrome Checker</h3>
-                        <p>
-                            An accessible text-processing application that
-                            evaluates phrases while ignoring case, punctuation,
-                            and spacing.
-                        </p>
-
-                        <ul class="technology-tags">
-                            <li>JavaScript</li>
-                            <li>Regex</li>
-                            <li>Unicode</li>
-                            <li>Accessibility</li>
-                        </ul>
-
-                        <div class="project-links">
-                            <a
-                                href="https://palindrome-checker-8xvfm2c62-marsharine-simpsons-projects.vercel.app/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Live Demo ↗
-                            </a>
-
-                            <a
-                                href="https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Palindrome_Checker"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Source ↗
-                            </a>
+                        <div class="project-actions">
+                            <a class="button button-primary button-small" href="case-studies/luma-one.html">View Case Study</a>
+                            <a href="https://luma-one-product-landing.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+                            <a href="https://github.com/marsharine-cs/Software_Engineering-Projects/tree/Product_Landing-_Page" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
                         </div>
                     </div>
                 </article>
             </div>
 
-            <div class="github-project-link">
-                <a
-                    href="https://github.com/marsharine-cs/Software_Engineering-Projects"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Explore the complete project repository
-                    <span aria-hidden="true">↗</span>
-                </a>
+            <div class="section-action">
+                <a class="text-link" href="projects.html">Explore all projects <span aria-hidden="true">→</span></a>
             </div>
         </section>
 
-        <!-- =====================================================
-             PROFESSIONAL PROFILE
-        ====================================================== -->
-        <section class="profile-section" id="about" aria-labelledby="about-heading">
-            <div class="profile-heading">
-                <p class="eyebrow">PROFESSIONAL PROFILE</p>
-                <h2 id="about-heading">
-                    Technology experience
-                    <span>meets education.</span>
-                </h2>
-            </div>
-
-            <div class="profile-content">
-                <p class="profile-lead">
-                    I work at the intersection of technology, education,
-                    technical support, and digital problem-solving.
-                </p>
-
-                <p>
-                    My background in information technology and security,
-                    S.T.E.M. education, technical support, and software projects
-                    shapes the way I approach technology: understand the problem,
-                    communicate clearly, build thoughtfully, test the result, and
-                    improve what can be improved.
-                </p>
-
-                <p>
-                    I am especially effective in environments where technology
-                    must not only work, but also make sense to the people using it.
-                </p>
-
-                <blockquote>
-                    Clear technology is not only about code. It is also about
-                    understanding people, problems, systems, and outcomes.
-                </blockquote>
-            </div>
-        </section>
-
-        <!-- =====================================================
-             EXPERIENCE
-        ====================================================== -->
-        <section class="experience-section" id="experience" aria-labelledby="experience-heading">
-            <div class="section-heading">
-                <div>
-                    <p class="eyebrow">SELECTED EXPERIENCE</p>
-                    <h2 id="experience-heading">
-                        Experience across
-                        <span>technology and learning.</span>
-                    </h2>
+        <section class="section section-dark" aria-labelledby="skills-heading">
+            <div class="shell">
+                <div class="section-heading section-heading-light">
+                    <div>
+                        <p class="eyebrow">TECHNICAL SKILLS</p>
+                        <h2 id="skills-heading">Tools I use to <span>ship working software.</span></h2>
+                    </div>
+                    <p>Technologies and practices demonstrated through deployed applications, documented repositories, testing, and production troubleshooting.</p>
                 </div>
 
-                <p>
-                    A professional background spanning education, technical
-                    support, SaaS environments, and technology-driven
-                    problem-solving.
-                </p>
-            </div>
-
-            <div class="experience-list">
-                <article class="experience-item">
-                    <div class="experience-date">2025 — Present</div>
-
-                    <div class="experience-details">
-                        <h3>Educator</h3>
-                        <p class="experience-company">Edmentum</p>
-                        <p>
-                            Deliver targeted, curriculum-aligned remote instruction
-                            and learning support while using assessment data and
-                            student performance to guide instruction.
-                        </p>
-                    </div>
-
-                    <div class="experience-focus">
-                        Education · Digital Learning · Assessment
-                    </div>
-                </article>
-
-                <article class="experience-item">
-                    <div class="experience-date">Technology Support</div>
-
-                    <div class="experience-details">
-                        <h3>SaaS &amp; Technical Support</h3>
-                        <p class="experience-company">HHAeXchange</p>
-                        <p>
-                            Supported users in a SaaS environment through technical
-                            troubleshooting, issue resolution, platform guidance,
-                            and customer-facing communication.
-                        </p>
-                    </div>
-
-                    <div class="experience-focus">
-                        SaaS · Troubleshooting · Customer Support
-                    </div>
-                </article>
-
-                <article class="experience-item">
-                    <div class="experience-date">Earlier Experience</div>
-
-                    <div class="experience-details">
-                        <h3>Technical Support</h3>
-                        <p class="experience-company">Telecommunications &amp; Technology</p>
-                        <p>
-                            Built foundational experience diagnosing technical
-                            issues, supporting customers, explaining technology
-                            clearly, and moving problems toward resolution.
-                        </p>
-                    </div>
-
-                    <div class="experience-focus">
-                        IT Support · Systems · Communication
-                    </div>
-                </article>
+                <div class="skills-grid">
+                    <article><span>01</span><h3>Frontend</h3><p>React · TypeScript · JavaScript · HTML5 · CSS3 · Tailwind CSS · DOM manipulation · responsive design</p></article>
+                    <article><span>02</span><h3>Backend + Data</h3><p>Supabase · PostgreSQL · relational data · authentication · Row Level Security · CRUD operations</p></article>
+                    <article><span>03</span><h3>Testing + Quality</h3><p>Vitest · React Testing Library · TypeScript checking · ESLint · debugging · accessibility · production verification</p></article>
+                    <article><span>04</span><h3>Workflow + Deployment</h3><p>Git · GitHub Issues · feature branches · pull requests · incremental development · Vercel · technical documentation</p></article>
+                </div>
             </div>
         </section>
 
-        <!-- =====================================================
-             TECHNICAL TOOLKIT
-        ====================================================== -->
-        <section class="skills-section" id="skills" aria-labelledby="skills-heading">
-            <div class="skills-heading">
-                <p class="eyebrow">TECHNICAL TOOLKIT</p>
-                <h2 id="skills-heading">
-                    Technologies I use to
-                    <span>build, analyze, and support.</span>
-                </h2>
-            </div>
-
-            <div class="primary-skills">
-                <span>JavaScript</span>
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>Python</span>
-                <span>Git</span>
-                <span>GitHub</span>
-            </div>
-
-            <div class="secondary-skills">
-                <span>VS Code</span>
-                <span>Vercel</span>
-                <span>DOM Manipulation</span>
-                <span>Responsive Design</span>
-                <span>Accessibility</span>
-                <span>Excel</span>
-                <span>Power BI</span>
-                <span>Tableau</span>
-                <span>Data Analytics</span>
-                <span>IT Support</span>
-                <span>Cybersecurity</span>
-                <span>Educational Technology</span>
-            </div>
-
-            <div class="currently-exploring">
-                <span>CURRENTLY EXPLORING</span>
-                <p>React · TypeScript · AI-powered applications</p>
-            </div>
-        </section>
-
-        <!-- =====================================================
-             BEYOND THE RÉSUMÉ — PROFESSIONAL Q&A
-        ====================================================== -->
-        <section class="questions-section" id="questions" aria-labelledby="questions-heading">
-            <div class="questions-introduction">
-                <p class="eyebrow">BEYOND THE RÉSUMÉ</p>
-
-                <h2 id="questions-heading">
-                    A little more about
-                    <span>how I work.</span>
-                </h2>
-
-                <p>
-                    A few questions that provide additional context about my
-                    professional approach, problem-solving, and use of technology.
-                </p>
-            </div>
-
-            <div class="questions-list">
-                <article class="question-item">
-                    <button
-                        class="question-button"
-                        type="button"
-                        aria-expanded="false"
-                    >
-                        <span>Tell me about yourself.</span>
-                        <span class="question-icon" aria-hidden="true">+</span>
-                    </button>
-
-                    <div class="question-answer">
-                        <p>
-                            I am a technology professional and S.T.E.M. educator
-                            with a background in information technology, security,
-                            technical support, digital learning, and software
-                            projects. What connects those areas for me is
-                            problem-solving: I enjoy understanding how something
-                            works, identifying what needs to improve, and
-                            communicating the solution in a way people can
-                            actually use.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="question-item">
-                    <button
-                        class="question-button"
-                        type="button"
-                        aria-expanded="false"
-                    >
-                        <span>What do you bring to a technology team?</span>
-                        <span class="question-icon" aria-hidden="true">+</span>
-                    </button>
-
-                    <div class="question-answer">
-                        <p>
-                            I bring a combination of technical problem-solving,
-                            communication, teaching, and user awareness. I can work
-                            through a technical issue while also thinking about the
-                            person who has to understand, support, or use the final
-                            solution. That combination is especially useful in
-                            collaborative, customer-facing, educational, and
-                            cross-functional technology environments.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="question-item">
-                    <button
-                        class="question-button"
-                        type="button"
-                        aria-expanded="false"
-                    >
-                        <span>How do you approach a technical problem you have not seen before?</span>
-                        <span class="question-icon" aria-hidden="true">+</span>
-                    </button>
-
-                    <div class="question-answer">
-                        <p>
-                            I start by defining the problem clearly and separating
-                            what I know from what I still need to determine. I
-                            reproduce or isolate the issue when possible, research
-                            deliberately, test one change at a time, validate the
-                            result, and document what worked. I am comfortable
-                            learning while solving rather than assuming I must
-                            already know every answer.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="question-item">
-                    <button
-                        class="question-button"
-                        type="button"
-                        aria-expanded="false"
-                    >
-                        <span>How do you use AI in your work?</span>
-                        <span class="question-icon" aria-hidden="true">+</span>
-                    </button>
-
-                    <div class="question-answer">
-                        <p>
-                            I use AI as an accelerator for research, brainstorming,
-                            development, debugging, documentation, and exploring
-                            alternative solutions. I still review the output, test
-                            the implementation, verify important information, and
-                            make the final decisions. I view AI as a powerful tool
-                            within a responsible human-led workflow—not as a
-                            substitute for understanding or accountability.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="question-item">
-                    <button
-                        class="question-button"
-                        type="button"
-                        aria-expanded="false"
-                    >
-                        <span>How does your education background strengthen your technology work?</span>
-                        <span class="question-icon" aria-hidden="true">+</span>
-                    </button>
-
-                    <div class="question-answer">
-                        <p>
-                            Teaching strengthens my ability to break complex ideas
-                            into understandable steps, recognize when a user or
-                            learner is stuck, communicate with different audiences,
-                            and evaluate whether an explanation actually worked.
-                            Those same skills transfer directly into technical
-                            support, documentation, interface design, training, and
-                            collaborative software work.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="question-item">
-                    <button
-                        class="question-button"
-                        type="button"
-                        aria-expanded="false"
-                    >
-                        <span>What kind of opportunity are you looking for?</span>
-                        <span class="question-icon" aria-hidden="true">+</span>
-                    </button>
-
-                    <div class="question-answer">
-                        <p>
-                            I am interested in technology opportunities where
-                            development, technical problem-solving, communication,
-                            and continuous learning are valued. I am particularly
-                            interested in work involving front-end development,
-                            educational technology, technical training, IT, or roles
-                            where technology must be translated into practical
-                            outcomes for real users.
-                        </p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- =====================================================
-             EDUCATION & CREDENTIALS
-        ====================================================== -->
-        <section
-            class="credentials-section"
-            id="credentials"
-            aria-labelledby="credentials-heading"
-        >
-            <div class="credentials-heading">
-                <p class="eyebrow">EDUCATION &amp; CREDENTIALS</p>
-
-                <h2 id="credentials-heading">
-                    Technical knowledge
-                    <span>with an educator's foundation.</span>
-                </h2>
-            </div>
-
-            <div class="credential-list">
-                <article>
-                    <span class="credential-label">DEGREE</span>
-                    <h3>Bachelor of Science</h3>
-                    <p>Information Technology &amp; Security</p>
-                    <strong>University of Phoenix</strong>
-                </article>
-
-                <article>
-                    <span class="credential-label">DEGREE</span>
-                    <h3>Associate of Arts</h3>
-                    <p>Elementary Education and Teaching</p>
-                </article>
-
-                <article>
-                    <span class="credential-label">NEW JERSEY</span>
-                    <h3>CTE Computer Science Technology</h3>
-                    <p>Certificate of Eligibility</p>
-                    <strong>Grades 9–12</strong>
-                </article>
-
-                <article>
-                    <span class="credential-label">FLORIDA</span>
-                    <h3>Computer Science</h3>
-                    <p>Statement of Eligibility</p>
-                    <strong>K–12</strong>
-                </article>
-            </div>
-        </section>
-
-        <!-- =====================================================
-             CONTACT
-        ====================================================== -->
-        <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+        <section class="section shell developer-edge" aria-labelledby="edge-heading">
             <div>
-                <p class="eyebrow">LET'S CONNECT</p>
-
-                <h2 id="contact-heading">
-                    Explore my work and
-                    <span>professional experience.</span>
-                </h2>
-
-                <p>
-                    Connect with me professionally, explore my work, or review
-                    my résumé for a fuller view of my education, experience,
-                    credentials, and technical background.
-                </p>
+                <p class="eyebrow">A DIFFERENT KIND OF DEVELOPMENT BACKGROUND</p>
+                <h2 id="edge-heading">I understand what happens when <span>real users get stuck.</span></h2>
             </div>
+            <div>
+                <p>My experience across technical support, SaaS, education, and AI evaluation influences how I build. I investigate problems systematically, document decisions clearly, consider accessibility early, and design for people—not only the ideal path.</p>
+                <a class="text-link" href="about.html">Read more about my background <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
 
-            <div class="contact-links">
-                <a
-                    href="https://www.linkedin.com/in/marsharine-a-simpson"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <span>
-                        Connect on
-                        <strong>LinkedIn</strong>
-                    </span>
-
-                    <span aria-hidden="true">↗</span>
-                </a>
-
-                <a
-                    href="https://github.com/marsharine-cs"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <span>
-                        Explore my
-                        <strong>GitHub</strong>
-                    </span>
-
-                    <span aria-hidden="true">↗</span>
-                </a>
-
-                <a
-                    href="assets/Marsharine-Simpson-Computer-Science-Educator-Resume-Final.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <span>
-                        Review my
-                        <strong>Résumé</strong>
-                    </span>
-
-                    <span aria-hidden="true">↗</span>
-                </a>
+        <section class="cta-section">
+            <div class="shell cta-grid">
+                <div>
+                    <p class="eyebrow">LET'S BUILD SOMETHING USEFUL</p>
+                    <h2>Looking for a developer who can build, troubleshoot, and communicate?</h2>
+                </div>
+                <div class="button-row">
+                    <a class="button button-light" href="projects.html">View Projects</a>
+                    <a class="button button-outline-light" href="https://github.com/marsharine-cs" target="_blank" rel="noopener noreferrer">Open GitHub ↗</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
     <footer class="site-footer">
-        <div class="footer-shell">
-            <div>
-                <p class="footer-name">Marsharine A. Simpson</p>
-                <p>S.T.E.M. Educator &amp; Technology Professional</p>
-            </div>
-
-            <div class="footer-links">
-                <a
-                    href="https://www.linkedin.com/in/marsharine-a-simpson"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    LinkedIn
-                </a>
-
-                <a
-                    href="https://github.com/marsharine-cs"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub
-                </a>
-
-                <a href="#top">Back to Top</a>
-            </div>
+        <div class="shell footer-grid">
+            <div><strong>Marsharine A. Simpson</strong><span>Software Developer</span></div>
+            <p>© <span data-current-year>2026</span> Marsharine A. Simpson</p>
         </div>
     </footer>
-
-    <!-- Trigger Portfolio V2 production deployment -->
 </body>
 </html>
