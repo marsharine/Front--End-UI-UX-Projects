@@ -458,26 +458,29 @@ h2 span {
     min-height: 390px;
 }
 
-.project-card-featured:nth-child(even) .project-media {
-    order: 2;
-}
-
 .project-media {
-    display: block;
+    display: grid;
     min-height: 320px;
+    padding: clamp(18px, 2.4vw, 30px);
     overflow: hidden;
-    background: var(--mist);
+    place-items: center;
+    background:
+        linear-gradient(145deg, rgba(94, 39, 79, 0.09), rgba(215, 166, 74, 0.12)),
+        var(--mist);
 }
 
 .project-media img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    max-height: 100%;
+    border-radius: 12px;
+    object-fit: contain;
+    box-shadow: 0 14px 30px rgba(50, 20, 41, 0.14);
     transition: transform 350ms ease;
 }
 
 a.project-media:hover img {
-    transform: scale(1.025);
+    transform: translateY(-3px);
 }
 
 .project-card-body {
@@ -806,6 +809,7 @@ a.project-media:hover img {
 
 .compact-card .project-media {
     min-height: 100%;
+    padding: 16px;
 }
 
 .compact-card .project-card-body {
@@ -857,7 +861,11 @@ a.project-media:hover img {
     width: 100%;
     height: 100%;
     min-height: 360px;
-    object-fit: cover;
+    padding: 28px;
+    object-fit: contain;
+    background:
+        linear-gradient(145deg, rgba(94, 39, 79, 0.08), rgba(215, 166, 74, 0.12)),
+        var(--mist);
 }
 
 .education-card > div {
@@ -992,8 +1000,8 @@ a.project-media:hover img {
 
 .case-cover img {
     width: 100%;
-    max-height: 680px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
 }
 
 .case-cover .tracker-preview {
@@ -1236,10 +1244,6 @@ a.project-media:hover img {
     .project-card-featured,
     .education-card {
         grid-template-columns: 1fr;
-    }
-
-    .project-card-featured:nth-child(even) .project-media {
-        order: 0;
     }
 
     .project-media {
